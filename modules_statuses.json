@@ -1,0 +1,8 @@
+{
+    "Student": true,
+    "Teacher": true,
+    "Admission": true,
+    "Library": true,
+    "Bus": true,
+    "Academic": true
+}
