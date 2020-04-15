@@ -16,3 +16,21 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/student', function (Request $request) {
     return $request->user();
 });
+
+
+
+// start api online admission
+Route::group([
+    'prefix' => 'online-admission',
+    "namespace"=>"API"
+
+], function ($router) { 
+
+   $router->post("/","OnlineAdmissionController@store");
+
+});
+
+
+
+
+
